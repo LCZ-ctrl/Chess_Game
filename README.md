@@ -19,9 +19,9 @@
   <br>
   <strong>游戏主菜单</strong>
   <br><br>
-  <img src="Graphics/game.png" width="350" alt="棋局"/>
+  <img src="Graphics/game.png" width="350" alt="下棋中"/>
   <br>
-  <strong>棋局</strong>
+  <strong>下棋中</strong>
   <br><br>
 </p>
 <br><br>
