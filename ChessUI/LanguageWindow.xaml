@@ -1,0 +1,52 @@
+﻿<Window x:Class="ChessUI.LanguageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Language"
+        Width="600"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen"
+        Icon="Assets/icon.ico"
+        Background="#101010"
+        ResizeMode="NoResize">
+
+    <Viewbox>
+        <Grid Width="600" Height="600">
+            <!-- 背景 -->
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/Menu.png" Stretch="UniformToFill"/>
+            </Grid.Background>
+
+            <!-- 标题显示当前语言的“语言” -->
+            <TextBlock x:Name="LangTitle"
+                       Text="LANGUAGE"
+                       Foreground="White"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       FontFamily="Segoe UI"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       Margin="0,150,0,0"/>
+
+            <!-- 三个固定语言按钮 -->
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="EnglishButton"
+                        Content="English"
+                        Width="200" Height="50"
+                        Click="EnglishButton_Click"
+                        Style="{StaticResource ButtonStyle}"
+                        Margin="0,0,0,10"/>
+                <Button x:Name="ChineseButton"
+                        Content="中文"
+                        Width="200" Height="50"
+                        Click="ChineseButton_Click"
+                        Style="{StaticResource ButtonStyle}"
+                        Margin="0,0,0,10"/>
+                <Button x:Name="RussianButton"
+                        Content="Русский"
+                        Width="200" Height="50"
+                        Click="RussianButton_Click"
+                        Style="{StaticResource ButtonStyle}"/>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>
